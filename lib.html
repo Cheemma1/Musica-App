@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library page</title>
+    <link rel="stylesheet" href="lib.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- mobile nav -->
+    <div class="navbar">
+  <div class="ss-nav">
+<div class="logo">
+  <i class="fa fa-bars" onclick="showMenu()"></i>
+  <img src="images/logo.svg" alt="">
+      </div>
+  <i class="fa fa-search"></i>
+        </div>
+<div class="navlinks" id="navLinks">
+ <i class="fa fa-window-close" onclick="hideMenu()"></i>
+<div class="nav-img">
+ <div class="red">
+ <img src="images/Home.png" alt="">
+<img src="images/playlist.png" alt="">
+<img src="images/Vector@2x.png" alt="">
+<img src="images/videos.png" alt="">
+ <img src="images/profile.png" alt="">
+ <img src="images/login.png" alt="">
+    </div>
+                <div class="nav-flex">
+     <a href="index.html">Home</a>
+ <a href="lib.html">My collections</a>
+     <a href="radio.html"> Radio</a>
+  <a href="">Music videos</a>        
+   <a href="">Profile</a>
+  <a href="#">Logout</a>
+    </div>
+     </div>
+        </div>
+    </div>
+    <!-- mobile nav end -->
+        
+ <div class="top-nav">
+<div class="logo">
+    <img src="images/logo.svg" alt="">
+    
+</div>
+<div class="srch">
+<i class="fa fa-search"></i>
+<input type="search" placeholder="search artist"></div>
+        </div>
+        <section class="header">
+    <div class="side">
+        <div class="side1">
+<a href="index.html"><img src="/images/Home.png" alt=""></a>
+<a href="lib.html"><img src="/images/playlist.png" alt=""></a>
+<a href="radio.html"><img src="images/Vector@2x.png" alt=""></a>
+<a href="http://"><img src="images/videos.png" alt=""> </a>
+    </div>
+    <div class="side2">
+<img src="images/profile.png" alt="">
+<img src="images/login.png" alt="">
+    </div>
+    </div>
+
+ <div class="container">
+<div class="container-btn">
+<button class="btn1">My collection</button>
+<button class="btn2">likes</button>
+</div>
+<div class="gallery-container"> 
+    <div class="gallery-flex">
+
+    <div class="content">
+    <img src="images/Rectangle 16.png" alt="" class="image">
+<div class="overlay"> 
+<h2>limits <span>jonn watts</span></h2>
+<i class="fa fa-play" id="btn"></i> </div>
+ </div>  
+
+<div class="content">
+    <img src="images/Rectangle 19.png" alt="" class="image">
+ <div class="overlay">
+     <h2>limits<span>jonh watts</span></h2>
+<i class="fa fa-play" id="btn"></i>
+    </div>
+</div>
+
+<div class="content">
+    <img src="images/Rectangle 14.png" alt="" class="image">
+<div class="overlay">
+     <h2>limits <span>john watts</span></h2>
+
+ <i class="fa fa-play " id="btn"></i>
+    </div>
+</div>
+<div class="content">
+    <img src="images/Rectangle 21.png" alt="" class="image">
+ <div class="overlay">
+  <h2>limits <span>john watts</span></h2>
+    <i class="fa fa-play" id="btn"></i>
+ </div>
+    </div>
+</div>
+</div>
+ </div>
+
+    <!-- music player -->
+    <div class="music-container">
+        <div class="music-info">
+            <img id="cover" alt="cover image">
+            <div class="m_title">
+                <p id="title">Seasons in</p>
+                <p id="singer">James</p>
+            </div>
+        </div>
+    
+  <div class="music-controls">
+  <div class="control">
+   <i class="bx bx-shuffle" id="shuffle"></i>
+<i class="bx bx-skip-previous" onclick="previous_song()" id="prev"></i>
+ <i class="bx bx-play" onclick="justplay()" id="play"></i>
+<i class="bx bx-skip-next" onclick="next_song()" id="next"></i>
+<i class="bx bx-repeat" id="auto"onclick="autoplay_switch()"></i> </div>
+    
+<div class="duration">
+ <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+</div>
+ </div>
+    
+<div class="music-volume">
+ <i class="bx bx-volume-full"></i>
+ <input title="volume" type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+ </div>
+    </div>
+    <!--music player end-->
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
